@@ -212,22 +212,22 @@ class Create_taskState extends State<Create_task> {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: customcolor.back_white,
-        // toolbarHeight: 200,
-        // leading: Padding(
-        //   padding: const EdgeInsets.only(
-        //     left: 15,
-        //   ),
-        //   child: InkWell(
-        //     onTap: () {
-        //       Navigator.push(
-        //           context, MaterialPageRoute(builder: (context) => Profile()));
-        //     },
-        //     child: const CircleAvatar(
-        //       backgroundImage: NetworkImage(
-        //           'https://images.unsplash.com/photo-1648183185045-7a5592e66e9c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHByb2lmaWxlJTIwcGhvdG98ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'),
-        //     ),
-        //   ),
-        // ),
+        toolbarHeight: 200,
+        leading: Padding(
+          padding: const EdgeInsets.only(
+            left: 15,
+          ),
+          child: InkWell(
+            onTap: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => Profile()));
+            },
+            child: const CircleAvatar(
+              backgroundImage: NetworkImage(
+                  'https://images.unsplash.com/photo-1648183185045-7a5592e66e9c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHByb2lmaWxlJTIwcGhvdG98ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'),
+            ),
+          ),
+        ),
       ),
       body: main_widget(),
     );
